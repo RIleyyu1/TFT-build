@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | FitnessPoint</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#">Join Now</a></li>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn">Join Now</button>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>LEARN THE LATEST TFT BUILD!</h1>
+          <h2>GET EZ WIN</h2>
+          <p>
+              TFT Helper is designed for TFT players who
+              want a quick and straightforward solution to
+              discover winning team lineups.
+
+          </p>
+          <div class="header__btn">
+            <button class="btn">Explore More</button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <div class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/about.png" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__header">Ready To Make A Change?</h2>
+          <p>
+              TFT Helper is a one-stop resource for players looking to master Teamfight Tactics with ease.
+              Say goodbye to cumbersome spreadsheets and text-heavy guides!
+              TFT Helper brings the latest meta directly to your screen through visually
+              appealing cheatsheets and detailed lineup breakdowns.
+          </p>
+          <div class="about__btn">
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="service" id="service">
+        <div class="section__container service__container">
+            <h2 class="section__header">Strategies</h2>
+            <div class="service__grid">
+                <div class="service__card" data-image="assets/Warrior.png">
+                    <img src="assets/6298d24e9265b86272ba2bbeb32d05e.png" alt="Warrior Fiora & Gwen" />
+                    <button class="save-btn">Save</button>
+                </div>
+                <div class="service__card" data-image="assets/Varus.png">
+                    <img src="assets/5df98927bf943f241bd59bd7f283f1f.png" alt="Arcana Varus & Tahm Kench" />
+                    <button class="save-btn">Save</button>
+                </div>
+                <div class="service__card" data-image="assets/Karma.png">
+                    <img src="assets/64fbcca5e8b19ed8f66712214d8a6bc.png" alt="Chrono Karma" />
+                    <button class="save-btn">Save</button>
+                </div>
+                <div class="service__card" data-image="assets/Olaf.png">
+                    <img src="assets/2bd353f4b30b56c50efa55e289b9b58.png" alt="Frost Varus & Olaf" />
+                    <button class="save-btn">Save</button>
+                </div>
+                <div class="service__card" data-image="assets/wu.png">
+                    <img src="assets/bc1920a4aace1ae5cfe180ef0fe5c80.png" alt="wukong" />
+                    <button class="save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="favoritesModal" class="modal">
+        <span class="close close-favorites">&times;</span>
+        <div class="modal-content favorites-content" id="favoritesContent">
+            <h2>Your Favorites</h2>
+            <div class="service__grid" id="favoritesGrid"></div>
+        </div>
+    </div>
+
+
+
+    <section class="footer">
+      <div class="footer__bar">
+        Copyright © 2024 All rights reserved.
+      </div>
+    </section>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
